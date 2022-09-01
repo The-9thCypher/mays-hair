@@ -1,0 +1,108 @@
+.site-header{
+    color: #fff;
+    padding-left: 10px;
+    font-size: 35px;
+    font-family: cursive;
+}
+
+.container{
+    background: transparent;
+    width: auto;
+    margin-left: 10px;
+    display: flex;
+}
+
+nav{
+    padding-left: 200px;
+    padding-top: 45px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 20px;
+  color: white;
+  font-family: cursive;
+
+}
+
+nav a:hover {
+  color: red;
+}
+
+body {
+  background: url(IMG-20220411-WA0393.jpg);
+}
+
+div {
+  background-color: black;
+  width: 500px;
+  border-radius: 20px;
+  margin-left: 370px;
+}
+
+.avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 75%;
+  padding-top: 15px;
+  position: relative;
+}
+
+.loginbox {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.loginbox input {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.loginbox input[type="text"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  width: 200px;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Times New Roman";
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.loginbox input[type="submit"] {
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  outline: none;
+  height: 40px;
+  width: 200px;
+  background: #fb2525;
+  color: #fff;
+  font-size: larger;
+  border-radius: 20px;
+}
+
+.loginbox input[type="submit"] {
+  cursor: pointer;
+  background: #fb2525;
+  color: #000;
+  border-radius: 9999px;
+}
+
+.loginbox a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.loginbox a:hover {
+  color: blue;
+}
