@@ -4,7 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>LOGIN FORM DESIGN</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="app.js"></script>
+    <script src="app.js" type="text/script"></script>
+    <link
+    rel="shortcut icon"
+    href="IMG-20220411-WA0393.jpg"
+    type="image/x-icon"
+  />
   </head>
   <div class="container">
     <h1 class="site-header">MAY'S HAIR PLACE</h1>
@@ -19,14 +24,14 @@
   <hr style="width: 75%; height: 2px; border-radius: 20px" color="#fff" />
   <br /><br />
 
-  <body>
+  <body background="IMG-20220411-WA0393.jpg">
     <div align="center">
       <div align="center" class="loginbox">
-        <img src="IMG-20220411-WA0390.jpg" class="avatar" />
+        <img src="IMG-20220411-WA0390.jpg" class="avatar" type="image/jpeg" />
         <h1 style="color: white">Login Here</h1>
 
         <!-- start of login form -->
-        <form>
+        <form action="localhost:5000/process_post" method="post">
           <p style="color: white">Username</p>
           <input type="text" name="username" placeholder="Enter Username..." />
           <p style="color: white">Password</p>
