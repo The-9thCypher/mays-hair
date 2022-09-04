@@ -31,7 +31,7 @@ const server = http.createServer((req, res) =>{
         res.statusCode = 200;
         res.end(signup)
     }
-    if (res.url === '/signup.csss'){
+    if (res.url === '/signup.css'){
         res.statusCode = 200;
         res.end(signupcss)
     }
