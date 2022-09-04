@@ -4,7 +4,8 @@ const login =  fs.readFileSync('login-page.html', 'utf-8');
 const style = fs.readFileSync('style.css', 'utf-8');
 const image1 = fs.readFileSync('IMG-20220411-WA0393.jpg');
 const image2 = fs.readFileSync('IMG-20220411-WA0390.jpg');
-const welcome = fs.readFileSync('welcome.html', 'utf-8');
+const signup = fs.readFileSync('signup.html', 'utf-8');
+const signupcss = fs.readFileSync('signup.css', 'utf-8');
 
 
 const server = http.createServer((req, res) =>{
@@ -25,9 +26,13 @@ const server = http.createServer((req, res) =>{
         res.statusCode = 200;
         res.end(image1)
     }
-    if (req.url === '/mays-hair'){
-        res.statusCode = 404;
-        res.end(welcome)
+    if (req.url === '/signup.html'){
+        res.statusCode = 200;
+        res.end(signup)
+    }
+    if (res.url === '/signup.csss'){
+        res.statusCode = 200;
+        res.end(signupcss)
     }
 })
 
