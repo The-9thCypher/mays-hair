@@ -13,8 +13,9 @@
 }
 
 nav{
-    padding-left: 200px;
+    padding-left: 60px;
     padding-top: 45px;
+    transition-duration: 2s;
 }
 
 nav a {
@@ -28,6 +29,7 @@ nav a {
 
 nav a:hover {
   color: red;
+  transition-duration: 1s;
 }
 
 /* body {
