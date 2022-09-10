@@ -13,3 +13,4 @@ function checkInput() {
     const usernameValue = username.value;
     const passwordValue = password.value;
 }
+

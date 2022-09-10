@@ -1,8 +1,9 @@
 const http = require("http");
 const fs = require('fs');
-// const authentication = require('./authentication');
+const authentication = require('authentication');
 const login =  fs.readFileSync('login-page.html', 'utf-8');
 const style = fs.readFileSync('style.css', 'utf-8');
+const script = fs.readFileSync('script.js', 'utf-8');
 const image1 = fs.readFileSync('IMG-20220411-WA0393.jpg');
 const image2 = fs.readFileSync('IMG-20220411-WA0390.jpg');
 const signup = fs.readFileSync('signup.html', 'utf-8');
@@ -35,6 +36,14 @@ const server = http.createServer((req, res) =>{
     if (req.url === '/Sign.css'){
         res.statusCode = 200;
         res.end(css)
+    }
+    if (req.url === '/script.js'){
+        res.statusCode = 200;
+        res.end(script);
+    }
+    if (req.url === './login-page.html?username=shylon&password=shyshyshyllon'){
+        res.statusCode = 200;
+        res.end(signup)
     }
 })
 
