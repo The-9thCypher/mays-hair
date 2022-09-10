@@ -1,5 +1,6 @@
 const http = require("http");
 const fs = require('fs');
+// const authentication = require('./authentication');
 const login =  fs.readFileSync('login-page.html', 'utf-8');
 const style = fs.readFileSync('style.css', 'utf-8');
 const image1 = fs.readFileSync('IMG-20220411-WA0393.jpg');

@@ -6,7 +6,7 @@
     <title>LOGIN FORM DESIGN</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://kit.fontawesome.com/ab93eae317.js" crossorigin="anonymous"></script>
-    <script src="app.js" type="text/script"></script>
+    <script src="script.js" type="text/script"></script>
     <link
     rel="shortcut icon"
     href="IMG-20220411-WA0393.jpg"
@@ -38,17 +38,18 @@
         <h1 style="color: white">Login Here</h1>
 
         <!-- start of login form -->
-        <form>
+        <form id="form">
           <p style="color: white">
             <span class="fa-solid fa-user" style="font-family: Font Awesome 5 free; color: #fff; font-weight: 900;" >&nbsp;</span>    
             Username
           </p>
-          <input type="text" name="username" placeholder="Enter Username..." />
+          <input type="text" name="username" id="username" placeholder="Enter Username..." />
           <p style="color: white">
             <span class="fa-solid fa-key" style="font-family: Font Awesome 5 free; color: #fff; font-weight: 900;" >&nbsp;</span>    
             Password
           </p>
           <input
+          id="password"
             type="password"
             name="password"
             placeholder="Enter Password..."
